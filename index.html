@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel= "stylesheet" href ="/code-quiz.css"
+    <link rel= "stylesheet" href ="/code-quiz.css">
 </head>
 <body>
     <header>
@@ -18,10 +18,10 @@
             <h2> What is a CDN?</h2>
             <div class = "first questions">
                 <ul>
-                   <li><button type="button" class="btn btn-primary">Content Delivery network</button></li>
-                    <li><button type="button" class="btn btn-primary">Contact Delivery network</button></li>
-                        <li><button type="button" class="btn btn-primary">Content Drama network</button></li>
-                            <li><button type="button" class="btn btn-primary">Content Delivery Netflix</button></li>
+                   <li><button type="rightbutton" class="btn btn-primary">Content Delivery network</button></li> <span id = "correctAnswer"></span>
+                    <li><button type="wrongbutton" class="btn btn-primary">Contact Delivery network</button></li>
+                        <li><button type="wrongbutton" dclass="btn btn-primary">Content Drama network</button></li>
+                            <li><button type="wrongbutton" class="btn btn-primary">Content Delivery Netflix</button></li>
                 </ul>
             </div>
         </section>
@@ -30,10 +30,10 @@
             <h3> Console.log is useful for?</h3>
             <div class = "Second questions">
                 <ul> 
-                    <li><button type="button" class="btn btn-primary">Detecting</button></li>
-                   <li><button type="button" class="btn btn-primary">Delivery</button> </li> 
-                   <li><button type="button" class="btn btn-primary">Debugging</button></li> 
-                    <li><button type="button" class="btn btn-primary">Delonging</button></li>
+                    <li><button type="wrongbutton" class="btn btn-primary">Detecting</button></li>
+                   <li><button type="wrongbutton" class="btn btn-primary">Delivery</button> </li> 
+                   <li><button type="rightbutton" class="btn btn-primary">Debugging</button></li> <span id ="correctAnswer"></span>
+                    <li><button type="wrongbutton" class="btn btn-primary">Delonging</button></li>
                 </ul>
             </div>
         </section>
@@ -42,10 +42,10 @@
             <h4> What are DOMS?</h4>
                 <div class= "Third question">
                     <ul>
-                        <li><button type="button" class="btn btn-primary">Dogs</button></li>
-                        <li><button type="button" class="btn btn-primary">Dentals</button></li>
-                        <li><button type="button" class="btn btn-primary">Nope</button></li> 
-                        <li><button type="button" class="btn btn-primary">Document Object Model</button></li>
+                        <li><button type="wrongbutton" class="btn btn-primary">Dogs</button></li>
+                        <li><button type="wrongbutton" class="btn btn-primary">Dentals</button></li>
+                        <li><button type="wrongbutton" class="btn btn-primary">Nope</button></li> 
+                        <li><button type="rightbutton" class="btn btn-primary">Document Object Model</button></li> <span id = "correctAnswer"></span>
                     </ul>
                 </div>
         </section>
@@ -54,17 +54,37 @@
             <h5> What does getElements by ID do? </h5>
             <div class = "Fourth question">
                 <ul> 
-                    <li><button type="button" class="btn btn-primary">Document Object Model</button> </li>
-                    <li><button type="button" class="btn btn-primary">Acess a particular Elements</button></li>
-                    <li><button type="button" class="btn btn-primary">Acesss a Folder</button></li>
-                    <li><button type="button" class="btn btn-primary">Acess a Document</button></li>
+                    <li><button type="rightbutton" class="btn btn-primary">Acess a particular Elements</button> </li> <span id= "correctAnswer"></span>
+                    <li><button type="wrongbutton" class="btn btn-primary">Document Object Model</button></li>
+                    <li><button type="wrongbutton" class="btn btn-primary">Acesss a Folder</button></li>
+                    <li><button type="wrongbutton" class="btn btn-primary">Acess a Document</button></li>
                 </ul>
             </div>
         </section>
         <section>
-
+            <div class = "finalScore">
+                <h6> Your final score is: <span class = "correctAnswer">0</span> </h6>
+                <h7> Enter your intials:</h7>
+            </div>
         </section>
-    </main>
+        <section>
+            <!-- Display High score-->
+        <div class = "HighScore">
+            <h8> HighScore!</h8>
+            <div class = "resetbutton"><button type="button" class="btn btn-primary">Go Back?</button></div>
+            <div class = "clearbutton"><button type="button" class="btn btn-primary">ClearHistory</button></div>
+        </div>
+        </section>
+    </main>    
+    <!-- making the timer the footer of the page-->
+        <footer>
+            <div class = "timer">
+                <div class = "text-timer">
+                    <div class ="timer-count">500</div>
+                </div>
+            </div>
+        </footer>
+ 
     <script src="/code-quiz.js"> </script>
 </body>
 </html>
