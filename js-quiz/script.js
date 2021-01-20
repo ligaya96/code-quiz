@@ -1,17 +1,16 @@
 var timer = document.querySelector(".timer-count");
-var startButton = document.querySelector(".start-button")
-var coreectAnswers = document.querySelector("correctAnswerspan")
+var startButton = document.getElementById("start-btn")
+var coreectAnswers = document.getElementById("correctAnswer")
 var resetButton = document.querySelector(".resetButton")
-var correctAnswerspan = ""
 var rightAnswers = "";
 var wrongAnswers = "";
 var timerCount = "";
-// 
-
+// click to begin the quiz
+startButton.addEventListener("click", startQuiz)
 //start of the quiz
 function startQuiz (){
-startButton.addEventListener("click", startQuiz)
-console.log("start")
+console.log("Started")
+
 }
 // selecting right answers
 function selectAnwser(){
@@ -35,4 +34,4 @@ function resetQuiz(){
     rightAnswers= 0;
     wrongAnswers=0;
 } 
-resetButton.addEventListener("click", resetQuiz);
+//resetButton.addEventListener("click", resetQuiz);

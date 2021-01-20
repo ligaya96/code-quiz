@@ -1,7 +1,13 @@
+header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 40px;
+}
+
 body {
     padding: 0;
-    margin:auto;
+    margin: 0;
     display: flex;
+    justify-content: center;
     width: 100vw;
     height: 100vh; 
     font-family: 'Courier New', Courier, monospace;
