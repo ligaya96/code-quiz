@@ -1,6 +1,7 @@
 var timer = document.querySelector(".timer-count");
 var startButton = document.getElementById("start-btn")
 var coreectAnswers = document.getElementById("correctAnswer")
+var wrongAnswers= document.getElementById("wrongAnswer")
 var resetButton = document.querySelector(".resetButton")
 var rightAnswers = "";
 var wrongAnswers = "";
@@ -20,7 +21,7 @@ function selectAnwser(){
 function saveAnswers(){
 
 }
-//wrong answer will reduce timer 
+//selecting wrong answer will reduce timer 
 function wrongAnswers(){
 
 }
