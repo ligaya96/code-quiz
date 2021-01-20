@@ -6,12 +6,15 @@ var correctAnswerspan = ""
 var rightAnswers = "";
 var wrongAnswers = "";
 var timerCount = "";
+// 
+
 //start of the quiz
 function startQuiz (){
 startButton.addEventListener("click", startQuiz)
+console.log("start")
 }
 // selecting right answers
-function click (){
+function selectAnwser(){
 
 }
 //storing correctanswer points
