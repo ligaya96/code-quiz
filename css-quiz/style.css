@@ -8,8 +8,33 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 100vh; 
+    width: auto;
+    height:auto; 
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
+}
+.btn-primary {
+    display: grid;
+    gap : 5px;
+    margin : 20px 0;
+}
+.resetbtn-primary {
+    font-size: small;
+    height: auto;
+    line-height: normal;
+    margin:auto;
+}
+.clearbtn-primary {
+    font-size: small;
+    height: auto;
+    line-height: normal;
+    margin:auto;
+}
+.timer {
+    font-size : Bold;
+    text-align: center;
+    padding : 10px;
+}
+.timer-count {
+    font-size: small;
 }
