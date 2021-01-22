@@ -1,6 +1,7 @@
 header{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 40px;
+    text-emphasis: bold;
 }
 
 body {
@@ -13,23 +14,12 @@ body {
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
 }
-.btn-primary {
+.btn-style {
     display: grid;
     gap : 5px;
     margin : 20px 0;
 }
-.resetbtn-primary {
-    font-size: small;
-    height: auto;
-    line-height: normal;
-    margin:auto;
-}
-.clearbtn-primary {
-    font-size: small;
-    height: auto;
-    line-height: normal;
-    margin:auto;
-}
+
 .timer {
     font-size : Bold;
     text-align: center;
