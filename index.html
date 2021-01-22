@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coding Quiz</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel= "stylesheet" href ="./css-quiz/style.css">
 </head>
@@ -13,76 +13,34 @@
         <button id= "start-btn" class="start-btn btn-primary">Start Quiz!</button>
     </header>
     <main>
-    <div id = "question-content" class="hide">
-        <section>
-            <!--first question of the quiz-->
-            <div id = "question-1">
-                <h2> What is a CDN?</h2>
-                    <ul>
-                   <li><button id= "correctAnswer" class="btn btn-primary">Content Delivery network</button></li> 
-                    <li><button id="wrongAnswer" class="btn btn-primary">Contact Delivery network</button></li>
-                        <li><button id="wrongAnswer" class="btn btn-primary">Content Drama network</button></li>
-                            <li><button id="wrongAnswer" class="btn btn-primary">Content Delivery Netflix</button></li>
-                    </ul>
+        <div class = "container">
+            <div id = "question-content" class="hide"></div>
+                <div id = "Quiz">Coding Quiz!</div>
+                <div id = "answer-buttons" class= "btn-grid">
+                    <button class= "btn">Question 1</button>
+                    <button class= "btn">Question 2</button>
+                    <button class= "btn">Question 3</button>
+                    <button class= "btn">Question 4</button>
                 </div>
-        </section>
-        <section> 
-            <!-- second question of the quiz-->
-            <div id = "question-2">
-              <h3> Console.log is useful for?</h3>
-                <ul> 
-                    <li><button id="wrongAnswer" class="btn btn-primary">Detecting</button></li>
-                   <li><button id="wrongAnswer" class="btn btn-primary">Delivery</button> </li> 
-                 <li><button id="rightAnswer" class="btn btn-primary">Debugging</button></li> 
-                  <li><button id="wrongAnswer" class="btn btn-primary">Delonging</button></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <!-- third question of the quiz-->
-                <div id= "question-3">  
-                    <h4>What are DOMS?</h4>
-                    <ul>
-                        <li><button type="wrongAnswer" class="btn btn-primary">Dogs</button></li>
-                        <li><button type="wrongAnswer" class="btn btn-primary">Dentals</button></li>
-                        <li><button type="wrongAnswer" class="btn btn-primary">Nope</button></li> 
-                        <li><button type="rightAnswer" class="btn btn-primary">Document Object Model</button></li> 
-                    </ul>
-                </div>
-        </section>
-        <section>
-            <!-- Fourth question of the quiz-->
-            <div id = "question-4">
-               <h5> What does getElements by ID do? </h5>
-                <ul> 
-                    <li><button id="rightAnswer" class="btn btn-primary">Acess a particular Elements</button></li>
-                    <li><button id="wrongAnswer" class="btn btn-primary">Document Object Model</button></li>
-                    <li><button id="wrongAnswer" class="btn btn-primary">Acesss a Folder</button></li>
-                    <li><button id="wrongAnswer" class="btn btn-primary">Acess a Document</button></li>
-                </ul>
-            </div>
-        </section>
-        <section>
+                
             <!-- Display High score-->
         <div id = "HighScore" class = "hide-HS">
             <h6> Final Score!</h6>
               <div id = "correctAnswer">
-                <h6> Your final score is:  </h6>
-                <h7> Enter your intials :</h7>
+                <h1> Your final score is: </h1>
+                <h2> Enter your intials :</h2>
               </div>
                 <div id = "control-buttons">
-                     <button id="resetbutton" class="btn resetbtn-primary">Go Back?</button>
-                    <button id="clearbutton" class="btn clearbtn-primary">ClearHistory</button>
+                    <button id= "nextbutton" class = "btn nextbtn">Start</button>
+                     <button id="resetbutton" class="btn resetbtn">Go Back?</button>
+                    <button id="clearbutton" class="btn clearbtn">ClearHistory</button>
                 </div>
-        </section>
     </div>    
     </main>    
     <!-- the timer the footer of the page-->
-        <footer>
             <div class = "timer">
                     <div class ="timer-count">500</div>
             </div>
-        </footer>
     <script src="./js-quiz/script.js"></script>
 </body>
 </html>
