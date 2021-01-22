@@ -1,10 +1,11 @@
 var timerElement= document.querySelector(".timer-count");
-var startButton = document.getElementById("start-btn");
-var quizquestion = document.getElementById("question-content");
-var wrongAnswers= document.getElementById("wrongAnswer");
+var startButton = document.getElementById("start-btn")
+var quizquestions = document.getElementById("Quiz");
+var quizcontent = document.getElementById( "question-content")
 var resetButton = document.querySelector(".resetButton");
-var rightAnswers = "";
-var currentQuestion= "";
+var questionButton = document.getElementById ("question-button")
+var correctAnswers = true;
+var currentQuestion, shuffeledQuestion
 var wrongAnswers = "";
 var timerCount;
 var timer;
@@ -14,72 +15,69 @@ startButton.addEventListener("click", startQuiz)
 function startQuiz () {
     startButton.classList.add("hide")
     timerCount = 500;
-    //currentQuestion= 0
-    quizquestion.classList.remove("hide")
+    currentQuestion = 0
+    shuffeledQuestion = questions.sort(() => Math.random() - .5)
+    quizcontent.classList.remove("hide")
+    setNextQuestion();
     startTimer();
-   startQuestions();
 }
-function showQuestion(question) {
-   // questionOne.textContent = question
-    //console.log(question)
-    //if correctAnswer button was pushed 
-    //then store correct answer 
-    //if (question.correctAnswers) {
-       // startButton.dataset.correctAnswers=quesion.correctAnswers
-
-   // }
-    //button.addEventListener("click", selectAnswer)
+function setNextQuestion() {
+    showQuestion(shuffeledQuestion[currentQuestion]);
+}
+function showQuestion(question){
+    quizquestions.innerHTML = question.question
 }
 
 // selecting right answers
-function selectAnwser(){
+//function selectAnwser(){
 
 
-}
+//}
 
 //storing correctanswer points
-function saveAnswers(){
+//function saveAnswers(){
 
-}
+//}
 //selecting wrong answer will reduce timer 
-function wrongAnswers(){
+//function wrongAnswers(){
 
-}
+//}
 
 // retreive highscores and display them
-function retieveAnswers (){
+//function retieveAnswers (){
     
-}
+//}
 
 //the questions
 var questions = [
     {
         question: "What is a CDN?",
         answer: [
-            {text: "Content Delivery network", correctanswer:true},
-            {text: "Contact Delivery network", correctanswer:false},
-            {text: "Content Drama network", correctanswer: false},
-            {text: "Content Delivery Netflix",coreectAnswers:false},
+            {a: "Content Delivery network", correctAnswer:true},
+            {b: "Contact Delivery network", correctAnswer:false},
+            {c: "Content Drama network", correctAnswer: false},
+            {d: "Content Delivery Netflix",coreectAnswer:false},
 
         ]
     },
     {
         question: "Console.log is useful for??",
         answer: [
-            {text: "Detecting", correctanswer: false},
-            {text: "Debugging", correctanswer: true},
-            {text: "Delivery", correctanswer:  false},
-            {text: "Delonging", correctAnswers: false},
+            {a: "Detecting", correctAnswer: false},
+            {b: "Debugging", correctAnswer: true},
+            {c: "Delivery", correctAnswer:  false},
+            {d: "Delonging", correctAnswer: false},
 
         ]
     },
     {
         question: "What are DOMS",
         answer: [
-            {text: "Dogs", correctanswer: false},
-            {text: "Dental", correctanswer: false},
-            {text: "Document Object Model", correctanswer:  true},
-            {text: "Delonging", correctAnswers: false},
+            {a: "Dogs", correctAnswer: false},
+            {b: "Dental", correctAnswer: false},
+            {c: "Document Object Model", correctAnswer:  true},
+            {d: "Delonging", correctAnswer
+            : false},
         ]
     }
 ]
@@ -106,4 +104,4 @@ function resetQuiz(){
     rightAnswers= 0;
     wrongAnswers=0;
 } 
-//resetButton.addEventListener("click", resetQuiz);
+//resetButton.addEventListener("click", resetQuiz)

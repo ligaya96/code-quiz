@@ -4,7 +4,7 @@ header{
     text-emphasis: bold;
 }
 
-body {
+.container {
     padding: 0;
     margin: 0;
     display: flex;
