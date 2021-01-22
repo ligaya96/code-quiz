@@ -38,3 +38,6 @@ body {
 .timer-count {
     font-size: small;
 }
+.hide {
+    display: none;
+}

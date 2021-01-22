@@ -15,8 +15,9 @@
     <main>
         <section>
             <!--first question of the quiz-->
+    <div id = "question-content" class="hide">
+            <div id = "question-1">
             <h2> What is a CDN?</h2>
-            <div id = "firstquestions">
                 <ul>
                    <li><button id= "correctAnswer" class="btn btn-primary">Content Delivery network</button></li> 
                     <li><button id="wrongAnswer" class="btn btn-primary">Contact Delivery network</button></li>
@@ -27,8 +28,8 @@
         </section>
         <section> 
             <!-- second question of the quiz-->
-            <h3> Console.log is useful for?</h3>
-            <div id = "Secondquestions">
+            <div id = "question-2">
+              <h3> Console.log is useful for?</h3>
                 <ul> 
                     <li><button id="wrongAnswer" class="btn btn-primary">Detecting</button></li>
                    <li><button id="wrongAnswer" class="btn btn-primary">Delivery</button> </li> 
@@ -39,8 +40,8 @@
         </section>
         <section>
             <!-- third question of the quiz-->
-            <h4>What are DOMS?</h4>
-                <div id= "Third question">
+                <div id= "question-3">  
+                    <h4>What are DOMS?</h4>
                     <ul>
                         <li><button type="wrongAnswer" class="btn btn-primary">Dogs</button></li>
                         <li><button type="wrongAnswer" class="btn btn-primary">Dentals</button></li>
@@ -50,8 +51,8 @@
         </section>
         <section>
             <!-- Fourth question of the quiz-->
-            <h5> What does getElements by ID do? </h5>
-            <div id = "Fourth question">
+            <div id = "question-4">
+               <h5> What does getElements by ID do? </h5>
                 <ul> 
                     <li><button id="rightAnswer" class="btn btn-primary">Acess a particular Elements</button></li>
                     <li><button id="wrongAnswer" class="btn btn-primary">Document Object Model</button></li>
@@ -60,19 +61,21 @@
                 </ul>
             </div>
         </section>
+    </div>  
         <section>
-            <div class = "finalScore">
+            <div id = "finalScore">
                 <h6> Your final score is: <span class = "correctAnswer">0</span> </h6>
                 <h7> Enter your intials:</h7>
             </div>
         </section>
         <section>
             <!-- Display High score-->
-        <div class = "HighScore">
+        <div id = "HighScore">
             <h8> HighScore!</h8>
             <button id="resetbutton" class="btn resetbtn-primary">Go Back?</button>
             <button id="clearbutton" class="btn clearbtn-primary">ClearHistory</button></div>
         </div>
+             </div>
         </section>
     </main>    
     <!-- making the timer the footer of the page-->
@@ -81,7 +84,6 @@
                     <div class ="timer-count">500</div>
             </div>
         </footer>
- 
     <script src="./js-quiz/script.js"></script>
 </body>
 </html>
