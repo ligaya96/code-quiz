@@ -13,18 +13,18 @@
         <button id= "start-btn" class="start-btn btn-primary">Start Quiz!</button>
     </header>
     <main>
+    <div id = "question-content" class="hide">
         <section>
             <!--first question of the quiz-->
-    <div id = "question-content" class="hide">
             <div id = "question-1">
-            <h2> What is a CDN?</h2>
-                <ul>
+                <h2> What is a CDN?</h2>
+                    <ul>
                    <li><button id= "correctAnswer" class="btn btn-primary">Content Delivery network</button></li> 
                     <li><button id="wrongAnswer" class="btn btn-primary">Contact Delivery network</button></li>
                         <li><button id="wrongAnswer" class="btn btn-primary">Content Drama network</button></li>
                             <li><button id="wrongAnswer" class="btn btn-primary">Content Delivery Netflix</button></li>
-                </ul>
-            </div>
+                    </ul>
+                </div>
         </section>
         <section> 
             <!-- second question of the quiz-->
@@ -33,8 +33,8 @@
                 <ul> 
                     <li><button id="wrongAnswer" class="btn btn-primary">Detecting</button></li>
                    <li><button id="wrongAnswer" class="btn btn-primary">Delivery</button> </li> 
-                   <li><button id="rightAnswer" class="btn btn-primary">Debugging</button></li> 
-                    <li><button id="wrongAnswer" class="btn btn-primary">Delonging</button></li>
+                 <li><button id="rightAnswer" class="btn btn-primary">Debugging</button></li> 
+                  <li><button id="wrongAnswer" class="btn btn-primary">Delonging</button></li>
                 </ul>
             </div>
         </section>
@@ -47,6 +47,7 @@
                         <li><button type="wrongAnswer" class="btn btn-primary">Dentals</button></li>
                         <li><button type="wrongAnswer" class="btn btn-primary">Nope</button></li> 
                         <li><button type="rightAnswer" class="btn btn-primary">Document Object Model</button></li> 
+                    </ul>
                 </div>
         </section>
         <section>
@@ -61,8 +62,6 @@
                 </ul>
             </div>
         </section>
-    </div>  
-        
         <section>
             <!-- Display High score-->
         <div id = "HighScore" class = "hide-HS">
@@ -70,14 +69,15 @@
               <div id = "correctAnswer">
                 <h6> Your final score is:  </h6>
                 <h7> Enter your intials :</h7>
+              </div>
+                <div id = "control-buttons">
+                     <button id="resetbutton" class="btn resetbtn-primary">Go Back?</button>
+                    <button id="clearbutton" class="btn clearbtn-primary">ClearHistory</button>
                 </div>
-            <button id="resetbutton" class="btn resetbtn-primary">Go Back?</button>
-            <button id="clearbutton" class="btn clearbtn-primary">ClearHistory</button></div>
-        </div>
-             </div>
         </section>
+    </div>    
     </main>    
-    <!-- making the timer the footer of the page-->
+    <!-- the timer the footer of the page-->
         <footer>
             <div class = "timer">
                     <div class ="timer-count">500</div>
