@@ -14,7 +14,7 @@ header{
     font-family: 'Courier New', Courier, monospace;
     align-items: center;
 }
-.btn-style {
+.btn-gride {
     display: grid;
     gap : 5px;
     margin : 20px 0;
@@ -22,7 +22,8 @@ header{
 
 .timer {
     font-size : Bold;
-    text-align: center;
+    text-emphasis: Bold;
+    text-align: left;
     padding : 10px;
 }
 .timer-count {
@@ -33,4 +34,8 @@ header{
 }
 .hide-HS {
     display : none;
+}
+.Highscore {
+    text-emphasis: bold;
+    font-size: Bold;
 }
