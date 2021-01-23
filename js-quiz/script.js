@@ -8,7 +8,7 @@ var questionButton = document.getElementById ("question-buttons");
 var resultsScore = document.getElementById ("Results");
 var correctAnswers = true;
 var currentQuestion, shuffeledQuestion
-var wrongAnswers = "";
+var wrongAnswers = 0
 var timerCount;
 var timer;
 // click to begin the quiz
@@ -61,8 +61,6 @@ while (questionButton.firstChild) {
 // selecting right answers
 function RightAnwser(e){
     var clickedbutton = e.target
-    //var numcorrectAnswers= 0;
-    var correctAnswer = clickedbutton.dataset.correctAnswer
 if (shuffeledQuestion.length > currentQuestion + 1){
 nextButton.classList.remove("hide")
 } else {
@@ -70,16 +68,21 @@ nextButton.classList.remove("hide")
     resetButton.classList.remove("hide")
 }
 }
+//storing correctanswer points
+function saveAnswers(){
+localStorage.setItem(rightAnswer)
+}
+
 //selecting wrong answer will reduce timer 
 function wrongAnswer(){
-    wrongAnswers = clickedbutton.correctAnswer;false
+    wrongAnswers = document.querySelectorAll("correctAnswer:false");
 
 }
 
-//storing correctanswer points
-//function saveAnswers(){
-//}
+// retreive highscores and display them
+function retieveAnswers (){
 
+}
 
 
 //the questions
@@ -120,22 +123,19 @@ function startTimer() {
     timer = setInterval(function(){
         timerCount--;
         timerElement.textContent = timerCount;
-        if (timerCount >= 0) {
-    if (CorrectAnswers && timerCount > 0) {}
-            clearInterval(timer);
-            //winQuiz();
-        }
-            if (timerCount ===0 ){
+        if (timerCount >= 0) {}
+            //winQuiz
+           if (timerCount ===0 ){
                 clearInterval(timer);
-               // loseQuiz();
+        
             }
         
     },1000);
 }
-// retreive highscores and display them
-//function retieveAnswers (){
-
-    
-//}
-
-//resetButton.addEventListener("click", resetQuiz)
+//adding the reset Quiz
+function resetQuiz(){
+   resultsScore.classList.remove("hide")
+   questionButton.classList.add('hide')
+    quizcontent.classList.add("hide")
+}
+resetButton.addEventListener("click", resetQuiz)

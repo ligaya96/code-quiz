@@ -32,9 +32,6 @@ header{
 .hide {
     display: none;
 }
-.hide-HS {
-    display : none;
-}
 .Highscore {
     text-emphasis: bold;
     font-size: Bold;
